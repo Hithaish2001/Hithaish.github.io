@@ -1,3 +1,4 @@
+import logo from "../assets/programmer.gif";
 const Home=()=>{
     return(
         <main>
@@ -6,8 +7,8 @@ const Home=()=>{
                     <h1 className="text-2xl font-semibold">Hello, My name is</h1>
                     <h1 className="text-7xl font-bold">Hithaish</h1>
                 </div>
-                <div className="image flex ml-96 mt-60">
-                    image
+                <div className="image flex ml-96 mt-36 mr-20">
+                    <img src={logo} alt="" style={{width: "700px"}}/>
                 </div>
             </div>
             
