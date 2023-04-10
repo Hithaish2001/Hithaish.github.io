@@ -1,5 +1,9 @@
 import React, {useState} from "react"
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaGithub} from 'react-icons/fa';
+import {BsLinkedin} from 'react-icons/bs';
+import {GrMail, GrTwitter} from 'react-icons/gr';
+
+
 const Navbar=()=>{
     const [nav, setNav]=useState(false)
     const handleclick=()=>setNav(!nav);
@@ -8,7 +12,7 @@ const Navbar=()=>{
             <div className="logo flex">
                 <h1 className=" pt-8 pl-10 text-2xl">Portfolio.</h1>
             </div>
-           <div className="flex  pr-8 pt-12 hidden md:flex">
+           <div className=" pr-8 pt-12 hidden md:flex">
             <li className="list-none px-5"><a href="#home" id="home">HOME</a></li>
             <li className="list-none px-5"><a href="#about" id="about">ABOUT</a></li>
             <li className="list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
@@ -29,6 +33,24 @@ const Navbar=()=>{
             <li className="list-none py-4"><a href="#contact" id="contact">CONTACT  ME</a></li>
             <li className="list-none py-4">TOGGLE</li>
            </ul>
+
+           {/* social accout reach-outs */}
+           <div className="social fixed flex flex-col left-0 top-[350px]">
+            <ul>
+                <li className="bg-black w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-500">
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://www.linkedin.com/in/hithaish-n-shetty-698a45227">LinkedIn <BsLinkedin size={35}/></a>
+                </li>
+                <li className="bg-black w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-500">
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://github.com/Hithaish2001">Github <FaGithub size={35}/></a>
+                </li>
+                <li className="bg-black w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-500">
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="/">Email <GrMail size={35}/></a>
+                </li>
+                <li className="bg-black w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-500">
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://twitter.com/Hithaish01">Twitter <GrTwitter size={35}/></a>
+                </li>
+            </ul>
+           </div>
         </nav>
     )
 }

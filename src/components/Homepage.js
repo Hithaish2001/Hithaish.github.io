@@ -11,10 +11,6 @@ const Home=()=>{
                     <img src={logo} alt="" style={{width: "700px"}}/>
                 </div>
             </div>
-            
-            <div className="w-screen h-full" id="about">
-                About me
-            </div>
         </main>
       
     );
