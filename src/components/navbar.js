@@ -8,7 +8,7 @@ const Navbar=()=>{
     const [nav, setNav]=useState(false)
     const handleclick=()=>setNav(!nav);
     return(
-        <nav className="nav fixed bg-transparent w-full h-24 flex text-black justify-between drop-shadow-2xl">
+        <nav className="nav fixed backdrop-blur-2xl bg-transparent w-full h-24 flex text-black justify-between drop-shadow-2xl">
             <div className="logo flex">
                 <h1 className=" pt-8 pl-10 text-2xl font-semibold">Portfolio.</h1>
             </div>
@@ -44,7 +44,7 @@ const Navbar=()=>{
                     <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://github.com/Hithaish2001">Github <FaGithub size={35}/></a>
                 </li>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="/">Email <GrMail size={35}/></a>
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="mailto:shetty9606@gmail.com">Email <GrMail size={35}/></a>
                 </li>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
                     <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://twitter.com/Hithaish01">Twitter <GrTwitter size={35}/></a>

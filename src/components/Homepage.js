@@ -9,7 +9,7 @@ const Home=()=>{
                 </div>
             </div>
             
-            <div className="image flex ml-96 mt-52 mr-20 static bg-zinc-900  w-1/2 h-4/6">
+            <div className="image flex ml-96 mt-52 mr-20 static bg-zinc-900  w-[50%] h-4/6">
                 <img className="flex" src={logo} alt=""/>
             </div>
         </main>
