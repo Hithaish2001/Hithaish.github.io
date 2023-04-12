@@ -1,5 +1,6 @@
 import React from 'react'
 import pic from '../assets/portfolio.png'
+import '../components/about.css'
 
 const About=()=> {
   return (
@@ -12,10 +13,10 @@ const About=()=> {
               </div>
             <div className="selfD mt-14 ml-14 mr-24 text-lg font-normal">
               <p>Hello guys, I'm Hithaish. I am interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-              <ul className='mt-5 flex space-x-7 font-medium cursor-pointer after:w-0 after:h-[3px] after:contents-[] after:bg-black after:absolute after:left-0 after:-bottom-8 after:duration-[0.5s] hover:w-[100%]'>
-                  <li>Skills</li>
-                  <li>Education</li>
-                  <li>Experirence</li>
+              <ul className='subnav mt-5 flex space-x-7 font-medium cursor-pointer'>
+                  <li className='navelements'>Skills</li>
+                  <li className='navelements'>Education</li>
+                  <li className='navelements'>Experirence</li>
                 </ul>
             </div>
         </div>

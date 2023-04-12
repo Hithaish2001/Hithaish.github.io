@@ -13,11 +13,11 @@ const Navbar=()=>{
                 <h1 className=" pt-8 pl-10 text-2xl font-semibold">Portfolio.</h1>
             </div>
            <div className=" pr-8 pt-12 hidden md:flex font-medium ">
-            <li className="links  list-none px-5"><a href="#home" id="home">HOME</a></li>
-            <li className="links  list-none px-5"><a href="#about" id="about">ABOUT</a></li>
-            <li className="links  list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
-            <li className="links  list-none px-5"><a href="#contact" id="contact">CONTACT  ME</a></li>
-            <li className="links  list-none px-5">TOGGLE</li>
+            <li className=" list-none px-5"><a href="#home" id="home">HOME</a></li>
+            <li className=" list-none px-5"><a href="#about" id="about">ABOUT</a></li>
+            <li className=" list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
+            <li className=" list-none px-5"><a href="#contact" id="contact">CONTACT  ME</a></li>
+            <li className="list-none px-5">TOGGLE</li>
            </div>
 
 
