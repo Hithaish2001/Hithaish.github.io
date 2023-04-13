@@ -3,7 +3,7 @@ import Home from "./components/Homepage";
 import About from "./components/about";
 function App() {
   return (
-    <div className="app ">
+    <div className="app w-screen  ">
       <Navbar/>
       <Home/>
       <About/> 

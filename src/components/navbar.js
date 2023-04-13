@@ -9,16 +9,19 @@ const Navbar=()=>{
     const handleclick=()=>setNav(!nav);
     return(
         <nav className="nav fixed backdrop-blur-2xl bg-transparent w-full h-24 flex text-black justify-between drop-shadow-2xl">
-            <div className="logo flex">
-                <h1 className=" pt-8 pl-10 text-2xl font-semibold">Portfolio.</h1>
+            <div className="w-screen flex justify-between items-center h-24">
+                <div className="logo flex px-5">
+                    <h1 className="  text-2xl font-semibold">Portfolio.</h1>
+                </div>
+            <div className=" hidden md:flex font-medium ">
+                <li className=" list-none px-5"><a href="#home" id="home">HOME</a></li>
+                <li className=" list-none px-5"><a href="#about" id="about">ABOUT</a></li>
+                <li className=" list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
+                <li className=" list-none px-5"><a href="#contact" id="contact">CONTACT  ME</a></li>
+                <li className="list-none px-5">TOGGLE</li>
             </div>
-           <div className=" pr-8 pt-12 hidden md:flex font-medium ">
-            <li className=" list-none px-5"><a href="#home" id="home">HOME</a></li>
-            <li className=" list-none px-5"><a href="#about" id="about">ABOUT</a></li>
-            <li className=" list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
-            <li className=" list-none px-5"><a href="#contact" id="contact">CONTACT  ME</a></li>
-            <li className="list-none px-5">TOGGLE</li>
            </div>
+           
 
 
            {/* mobile navbar */}
@@ -34,8 +37,9 @@ const Navbar=()=>{
             <li className="list-none py-4">TOGGLE</li>
            </ul>
 
-           {/* social accout reach-outs */}
-           <div className="social hidden lg:flex fixed flex-col left-0 top-[350px]">
+           
+             {/* social accout reach-outs */}
+             <div className="social hidden  lg:flex fixed flex-col left-0 top-[350px]">
             <ul>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
                     <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://www.linkedin.com/in/hithaish-n-shetty-698a45227">LinkedIn <BsLinkedin size={35}/></a>
@@ -51,6 +55,8 @@ const Navbar=()=>{
                 </li>
             </ul>
            </div>
+
+          
         </nav>
     )
 }
