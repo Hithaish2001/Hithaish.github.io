@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.links{
+		@apply relative tracking-[1px];
+	}
+	.links::after {
+		@apply content-[''] bg-black h-[3px] w-[0%] left-0 -bottom-[8px] rounded-xl absolute duration-[700ms];
+	}
+	.links:hover::after {
+		@apply w-[100%];
+    }
+
+}

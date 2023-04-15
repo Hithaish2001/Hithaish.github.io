@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'animation-bounce': 'bounce 5s infinite',
+      }
+    },
   },
   plugins: [],
 }

@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import {FaBars, FaTimes, FaGithub} from 'react-icons/fa';
 import {BsLinkedin} from 'react-icons/bs';
 import {GrMail, GrTwitter} from 'react-icons/gr';
+import './navbar.css'
 
 
 const Navbar=()=>{
@@ -10,14 +11,14 @@ const Navbar=()=>{
     return(
         <nav className="nav fixed backdrop-blur-2xl bg-transparent w-full h-24 flex text-black justify-between drop-shadow-2xl">
             <div className="w-screen flex justify-between items-center h-24">
-                <div className="logo flex px-5">
-                    <h1 className="  text-2xl font-semibold">Portfolio.</h1>
+                <div className="logo flex">
+                    <h1 className="  text-2xl font-semibold px-16">Portfolio.</h1>
                 </div>
-            <div className=" hidden md:flex font-medium ">
-                <li className=" list-none px-5"><a href="#home" id="home">HOME</a></li>
-                <li className=" list-none px-5"><a href="#about" id="about">ABOUT</a></li>
-                <li className=" list-none px-5"><a href="#projects" id="projects">PROJECTS</a></li>
-                <li className=" list-none px-5"><a href="#contact" id="contact">CONTACT  ME</a></li>
+            <div className=" hidden md:flex font-medium pt-6 px-5">
+                <li className="list-none px-5"><a href="#home" id="home" className="links">HOME</a></li>
+                <li className="list-none px-5"><a href="#about" id="about" className="links">ABOUT</a></li>
+                <li className="list-none px-5"><a href="#projects" id="projects" className="links">PROJECTS</a></li>
+                <li className="list-none px-5"><a href="#contact" id="contact" className="links">CONTACT  ME</a></li>
                 <li className="list-none px-5">TOGGLE</li>
             </div>
            </div>
