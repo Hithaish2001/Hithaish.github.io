@@ -9,7 +9,7 @@ const Navbar=()=>{
     const [nav, setNav]=useState(false)
     const handleclick=()=>setNav(!nav);
     return(
-        <nav className="nav fixed backdrop-blur-2xl bg-transparent w-full h-24 flex text-black justify-between drop-shadow-2xl">
+        <nav className="nav fixed backdrop-blur-2xl w-full h-24 flex text-black justify-between drop-shadow-2xl">
             <div className="w-screen flex justify-between items-center h-24">
                 <div className="logo flex">
                     <h1 className="  text-2xl font-semibold px-16">Portfolio.</h1>

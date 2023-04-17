@@ -13,5 +13,9 @@
 	.navelements:hover::after {
 		@apply w-[100%];
     }
+	.active-navelements::after{
+		@apply w-[50%]
+	}
+
 
 }
