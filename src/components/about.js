@@ -24,7 +24,7 @@ const About=()=> {
   return (
 
     <div name="about" className='w-screen h-screen flex justify-center items-center flex-col bg-white font-[470]'>
-        <p className='text-5xl font-semibold text-center pb-16'>About Me</p>
+        <p className='text-5xl font-semibold text-center pb-16 font-mono'>About Me</p>
         <div name="" className='flex w-full justify-center items-start pl-32'>
             <div className="pic  w-72 h-96 flex flex-none  hover:-translate-y-5 hover:translate-x-2 duration-300  left-[17rem] ">
               <img src={pic} alt="" className='rounded-3xl shadow-2xl shadow-zinc-600' />
@@ -64,8 +64,8 @@ const About=()=> {
 
                     {selected === 'experience' && (
                       <div name='experience' className='pt-7 pl-4'>
-                        <ol className='list-none font-[470]'>
-                        <p className='font-semibold pb-2'> Full Stack Developer Intern (Aug 2022-Sep 2022)</p>
+                        <ol className='list-none font-[470] space-y-1 text-justify'>
+                        <p className='font-semibold py-1'> Full Stack Developer Intern (Aug 2022-Sep 2022)</p>
                         <li className='list-disc'>I have done one month internship at <a className='font-medium underline' href='https://thaniyatech.com/'>Thaniya Technologies IT Solutions LLP</a>, Mangaluru.</li>
                         <li className='list-disc'>One of the most valuable skills I had learned are project planning & management and the ability to speak with people in a professional setting.</li>
                         <li className='list-disc'>Developed a full-stack application for an online bookseller. It Primarily enables the admin to manage the program by keeping track of orders, book availability, managing users, and other admin's actions.</li>
