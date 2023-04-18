@@ -45,16 +45,16 @@ const Navbar=()=>{
             <div className="social hidden lg:flex fixed flex-col left-0 top-[350px]">
             <ul>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://www.linkedin.com/in/hithaish-n-shetty-698a45227">LinkedIn <BsLinkedin size={35}/></a>
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hithaish-n-shetty-698a45227">LinkedIn <BsLinkedin size={35}/></a>
                 </li>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://github.com/Hithaish2001">Github <FaGithub size={35}/></a>
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" target="_blank" rel="noreferrer" href="https://github.com/Hithaish2001">Github <FaGithub size={35}/></a>
                 </li>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="mailto:shetty9606@gmail.com">Email <GrMail size={35}/></a>
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" target="_blank" rel="noreferrer" href="mailto:shetty9606@gmail.com">Email <GrMail size={35}/></a>
                 </li>
                 <li className="bg-neutral-900 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" href="https://twitter.com/Hithaish01">Twitter <GrTwitter size={35}/></a>
+                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5" target="_blank" rel="noreferrer" href="https://twitter.com/Hithaish01">Twitter <GrTwitter size={35}/></a>
                 </li>
             </ul>
             </div>
