@@ -1,18 +1,15 @@
-import React, { useState, useContext } from 'react'
+
 import bookstore from '../assets/bookstore.png'
 import news from '../assets/newszone-min.png'
 import textutil from '../assets/textanalyzer.png'
 import tictactoe from '../assets/tictactoe.png'
 import Wcounter from '../assets/wordcounter.png'
-import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
-import {GoPrimitiveDot} from 'react-icons/go'
-import 'react-slideshow-image/dist/styles.css'
 import Carousel  from './sample'
 
 const Project=()=>{
 
 
-    const slides=[news, textutil,bookstore,tictactoe,Wcounter
+    const images=[news, textutil,bookstore,tictactoe,Wcounter
       // {url: news},
       // {url: textutil},
       // {url: bookstore},
@@ -49,15 +46,14 @@ const Project=()=>{
         <p className='text-5xl font-semibold text-center font-mono py-7'>PROJECTS</p>
 
 
-         <div className=' w-full h-full relative justify-center items-center flex pt-24'>
+         <div className=' w-full h-full relative justify-center items-center flex '>
 
 
 
-          <div className='w-[790px] h-[490px] bottom-16 absolute bg-gray-300 rounded-2xl drop-shadow-2xl ring ring-offset-1 ring-gray-300'>
-            < Carousel autoSlide={true}>
-              {slides.map((s)=>(<img src={s} alt='' className='h-[490px] rounded-2xl'/>
-              ))}
-            </ Carousel>
+          <div className='carsoul carsoul-center w-[850px] h-[490px] bottom-16 absolute bg-gray-300 rounded-2xl drop-shadow-2xl ring ring-offset-1 ring-gray-400'>
+            <Carousel autoSlide='true'>
+              {images.map((s)=>(<img key={s} src={s} alt="" className='h-[490px] rounded-2xl'/> ))}
+            </Carousel>
           </div>
 
            

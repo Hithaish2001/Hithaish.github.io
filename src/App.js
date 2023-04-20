@@ -2,7 +2,7 @@ import Navbar from "./components/navbar";
 import Home from "./components/Homepage";
 import About from "./components/about";
 import Project from "./components/projects";
-// import ImageSlider from "./components/sample";
+// import Carousel from "./components/sample";
 function App() {
   return (
     <div className="app w-screen  ">
@@ -10,7 +10,7 @@ function App() {
       <Home/>
       <About/> 
       <Project/>
-      {/* <ImageSlider/> */}
+      {/* <Carousel autoSlide='true'/> */}
     </div>
   );
 }
