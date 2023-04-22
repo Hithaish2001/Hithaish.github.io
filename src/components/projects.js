@@ -20,13 +20,13 @@ const Project=()=>{
 
   return (
     
-    <div name="main" className='w-screen h-screen justify-center items-center flex flex-col'>
+    <div name="projects" id='projects' className=' w-screen h-screen justify-center items-center flex flex-col'>
         <p className='text-5xl font-semibold text-center font-mono py-7'>PROJECTS</p>
 
 
          <div className=' w-full h-full justify-center items-center grid grid-cols-3 pl-44'>
             {images.map((items)=>(
-              <div key={items.id} className='w-96 h-[220px] relative  rounded-xl shadow-2xl shadow-gray-700 group overflow-hidden'>
+              <div key={items.id} className='w-96 h-[220px] relative  rounded-xl shadow-2xl shadow-gray-400 group overflow-hidden ring ring-gray-400 ring-offset-1 cursor-pointer'>
                 
                   <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
                     <img src={items.images} alt="" className='w-full h-full rounded-xl opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top'/>

@@ -23,7 +23,7 @@ const About=()=> {
 
   return (
 
-    <div name="about" className='w-screen h-screen flex justify-center items-center flex-col bg-white font-[470]'>
+    <div name="about" id='about' className='w-screen h-screen flex justify-center items-center flex-col bg-white font-[470]'>
         <p className='text-5xl font-semibold text-center pb-16 font-mono'>About Me</p>
         <div name="" className='flex w-full justify-center items-start pl-32'>
             <div className="pic  w-72 h-96 flex flex-none  hover:-translate-y-5 hover:translate-x-2 duration-300  left-[17rem] ">

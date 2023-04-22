@@ -1,7 +1,7 @@
 import logo from "../assets/programmer.gif";
 const Home=()=>{
     return(
-        <div className=" flex w-screen h-screen">
+        <div name='home' id="home" className="flex w-screen h-screen">
             <div className="home flex w-full h-full justify-center items-center" id="home">
                 <div className="intro ">
                     <h1 className="text-2xl font-semibold">Hello, My name is</h1>
