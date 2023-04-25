@@ -23,14 +23,14 @@ const About=()=> {
 
   return (
 
-    <div id="about" className='w-screen h-screen flex justify-center items-center flex-col bg-white dark:bg-black font-[470]'>
+    <div id="about" className='w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-gradient-to-r from-black to-gray-800 font-[470]'>
         <p className='text-6xl font-semibold text-center pb-16 font-mono text-black dark:text-white'>About Me</p>
         <div name="" className='flex w-full justify-center items-start pl-32'>
             <div className="pic  w-72 h-96 flex flex-none  hover:-translate-y-5 hover:translate-x-2 duration-300  left-[17rem] ">
               <img src={pic} alt="" className='rounded-3xl shadow-2xl dark:shadow-slate-700 shadow-zinc-600' />
             </div>
             <div className="selfD w-3/5  text-lg font-normal items-start pl-20 text-black dark:text-white">
-                <p>Hello guys, I'm Hithaish. I am interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
+                <p>Hello guys, welcome to my protfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
                 <ul className='subnav pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>

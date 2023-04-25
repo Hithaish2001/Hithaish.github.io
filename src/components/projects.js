@@ -20,13 +20,13 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className=' w-screen h-screen justify-center items-center flex flex-col bg-white dark:bg-black'>
-        <p className='text-6xl font-semibold text-center font-mono py-7 text-black dark:text-white'>PROJECTS</p>
+    <div id="projects" className=' w-full h-screen justify-center items-center flex flex-col bg-white dark:bg-gradient-to-r from-black to-gray-800'>
+        <p className='text-6xl font-semibold text-center font-mono pt-24 text-black dark:text-white'>PROJECTS</p>
 
 
          <div className=' w-full h-full justify-center items-center grid grid-cols-3 pl-44'>
             {images.map((items)=>(
-              <div key={items.id} className='w-96 h-[220px] relative  rounded-xl shadow-2xl shadow-gray-400 dark:shadow-gray-600 group overflow-hidden ring ring-gray-400 ring-offset-1 cursor-pointer'>
+              <div key={items.id} className='w-96 h-[220px] relative  rounded-2xl group overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-amber-100'>
                 
                   <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
                     <img src={items.images} alt="" className='w-full h-full rounded-xl opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top'/>
