@@ -6,6 +6,7 @@ import './navbar.css'
 import { Link } from 'react-router-dom';
 import moon from "../assets/moon.png";
 import sun from "../assets/sun.png";
+import  uparrow from "../assets/up-arrow.png";
 
 
 const Navbar=()=>{
@@ -37,8 +38,8 @@ const Navbar=()=>{
       }
 
     return(
-       <main className="w-screen h-24">
-            <div className="nav fixed  z-50  backdrop-blur-2xl  flex text-black dark:text-white justify-between drop-shadow-2xl bg-transparent ">
+       <main className="w-screen h-24" id="navbar">
+            <div className="nav z-50 flex text-black dark:text-white justify-between drop-shadow-2xl bg-transparent ">
                     <div className="w-screen flex justify-between items-center h-24">
                         <div className="logo flex">
                             <h1 className="text-2xl font-semibold px-16">Portfolio.</h1>
@@ -78,14 +79,19 @@ const Navbar=()=>{
                 <li className="bg-gray-700 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400 dark:shadow-gray-800  duration-700">
                     <a className="flex w-36 text-white justify-between items-center text-xl pl-5 font-medium" target="_blank" rel="noreferrer" href="https://github.com/Hithaish2001">Github <FaGithub size={35}/></a>
                 </li>
-                <li className="bg-gray-700 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400 dark:shadow-gray-800  duration-700">
-                    <a className="flex w-36 text-white justify-between items-center text-xl pl-5 font-medium " target="_blank" rel="noreferrer" href="https://www.instagram.com/the_lazy_.sage/">Insta <BsInstagram size={35}/></a>
+                <li className="bg-gray-700 w-44 h-14 flex justify-between items-center ml-[-116px] hover:ml-[0px] shadow-2xl shadow-gray-400 dark:shadow-gray-800  duration-700">
+                    <a className="flex w-40 text-white justify-between items-center text-xl pl-5 font-medium " target="_blank" rel="noreferrer" href="https://www.instagram.com/the_lazy_.sage/">Instagram <BsInstagram size={35}/></a>
                 </li>
                 <li className="bg-gray-700 w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[0px] shadow-2xl shadow-gray-400 dark:shadow-gray-800  duration-700">
                     <a className="flex w-36 text-white justify-between items-center text-xl pl-5 font-medium" target="_blank" rel="noreferrer" href="https://twitter.com/Hithaish01">Twitter <GrTwitter size={35}/></a>
                 </li>
             </ul>
             </div>
+
+            <div className="fixed right-10 bottom-10 w-12 h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg">
+                <div className="w-9 h-9 translate-y-1"><img src={uparrow} alt="" onClick={() => scrollToSection('navbar')} className="animate-animation1-bounce bottom-0"/></div>
+            </div>
+
        </main>
     )
 }

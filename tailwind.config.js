@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation: {
         'animation-bounce': 'bounce 5s infinite',
+        'animation1-bounce': 'bounce 1s infinite ',
       }
     },
   },
