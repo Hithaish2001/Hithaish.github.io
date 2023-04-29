@@ -23,7 +23,7 @@ const About=()=> {
 
   return (
 
-    <div id="about" className='w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-gradient-to-r from-black to-gray-800 font-[470]'>
+    <div id="about" className='w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470]'>
         <p className='text-6xl font-semibold text-center pb-16 font-mono text-black dark:text-white'>About Me</p>
         <div name="" className='flex w-full justify-center items-start pl-32'>
             <div className="pic  w-72 h-96 flex flex-none  hover:-translate-y-5 hover:translate-x-2 duration-300  left-[17rem] ">
@@ -44,7 +44,7 @@ const About=()=> {
                       <div name="skills"  className={`content active-content flex h-72  relative top-6 -left-5`}>
                         <ol className='flex justify-center items-center pb-8 font-medium'>
                           <li><img src={html} alt='HTMl' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
-                          <li><img src={css} alt='css' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-blac dark:text-white pt-3 text-center font-sans'>CSS</p></li>
+                          <li><img src={css} alt='css' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
                           <li><img src={java} alt='java' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
                           <li><img src={react} alt='react' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
                           <li><img src={tailwind} alt='tailwind' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>

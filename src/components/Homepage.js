@@ -1,7 +1,7 @@
 import logo from "../assets/programmer.gif";
 const Home=()=>{
     return(
-        <div id='home' className="bg-white dark:bg-gradient-to-r from-black to-gray-800 flex w-full h-screen">
+        <div id='home' className="bg-white dark:bg-black-gray flex w-full h-screen">
             <div className="home flex w-full h-full justify-center items-center ">
                 <div className="intro dark:text-white text-black">
                     <h1 className="text-2xl font-semibold">Hello, My name is</h1>
