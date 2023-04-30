@@ -24,14 +24,20 @@ const About=()=> {
   return (
 
     <div id="about" className='w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470]'>
-        <p className='text-6xl font-semibold text-center pb-16 font-mono text-black dark:text-white'>About Me</p>
-        <div name="" className='flex w-full justify-center items-start pl-32'>
-            <div className="pic  w-72 h-96 flex flex-none  hover:-translate-y-5 hover:translate-x-2 duration-300  left-[17rem] ">
-              <img src={pic} alt="" className='rounded-3xl shadow-2xl dark:shadow-slate-700 shadow-zinc-600' />
+        <p className='text-4xl sm:text-6xl font-bold text-center sm:pb-16 font-mono text-black dark:text-white py-6'>About Me</p>
+        <div name="" className='sm:flex w-full justify-center items-start sm:pl-32'>
+
+            
+            <div className="hidden lg:flex w-72 h-96 flex-none">
+
+              <div className="absolute w-56 h-96 dark:bg-gray-700 bg-stone-200 rounded-3xl"></div>
+              <img src={pic} alt="" className='rounded-3xl z-20 -translate-y-6 -translate-x-7 hover:translate-y-0 hover:translate-x-0 duration-700' />
+
             </div>
-            <div className="selfD w-3/5  text-lg font-normal items-start pl-20 text-black dark:text-white">
-                <p>Hello guys, welcome to my protfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-                <ul className='subnav pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
+
+            <div className="max-w-[900px]  text-sm sm:text-lg font-normal px-8 sm:pl-20 text-black dark:text-white">
+                <p className='text-justify'>Hello guys, welcome to my protfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
+                <ul className='text-sm md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
                   <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>
@@ -42,7 +48,7 @@ const About=()=> {
                     
                     {selected === 'skills' && (
                       <div name="skills"  className={`content active-content flex h-72  relative top-6 -left-5`}>
-                        <ol className='flex justify-center items-center pb-8 font-medium'>
+                        <ol className='grid grid-cols-3 sm:grid-cols-5 justify-center items-center  font-medium'>
                           <li><img src={html} alt='HTMl' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
                           <li><img src={css} alt='css' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
                           <li><img src={java} alt='java' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
@@ -65,7 +71,7 @@ const About=()=> {
 
 
                     {selected === 'experience' && (
-                      <div name='experience' className='pt-7 pl-4 text-black dark:text-white'>
+                      <div name='experience' className='pt-7 pl-4 text-black dark:text-white max-w-[650px]'>
                         <ol className='list-none font-[470] space-y-1 text-justify'>
                         <p className='font-semibold py-1'> Full Stack Developer Intern (Aug 2022-Sep 2022)</p>
                         <li className='list-disc'>I have done one month internship at <a className='font-medium underline' href='https://thaniyatech.com/'>Thaniya Technologies IT Solutions LLP</a>, Mangaluru.</li>
