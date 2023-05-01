@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee19a8db.css",
+    "main.js": "/static/js/main.a0dacb8d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/bookstore.png": "/static/media/bookstore.a99bb31c04bc79566bb9.png",
+    "static/media/newszone-min.png": "/static/media/newszone-min.f8fd95237407e933bbea.png",
+    "static/media/cab.jpg": "/static/media/cab.0c39a90d0d9539195c26.jpg",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/portfolio.jpg": "/static/media/portfolio.c3d20c79bbb2103da565.jpg",
+    "static/media/rounded image.jpg": "/static/media/rounded image.070fd2178f4c50c4840a.jpg",
+    "static/media/java.png": "/static/media/java.ddf8676bd569fe01ab44.png",
+    "static/media/textanalyzer.png": "/static/media/textanalyzer.0fe2a760f99ebeaabacd.png",
+    "static/media/moon.png": "/static/media/moon.cfa37b178f3890f6d652.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/sun.png": "/static/media/sun.e084c7323a6f30ebee93.png",
+    "static/media/wordcounter.png": "/static/media/wordcounter.b7753ae402ea457338a9.png",
+    "index.html": "/index.html",
+    "main.ee19a8db.css.map": "/static/css/main.ee19a8db.css.map",
+    "main.a0dacb8d.js.map": "/static/js/main.a0dacb8d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee19a8db.css",
+    "static/js/main.a0dacb8d.js"
+  ]
+}
