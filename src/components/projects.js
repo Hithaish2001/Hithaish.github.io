@@ -5,6 +5,7 @@ import textutil from '../assets/textanalyzer.png'
 import tictactoe from '../assets/tictactoe.png'
 import Wcounter from '../assets/wordcounter.png'
 import cab from '../assets/cab.jpg'
+import {FiLink2} from 'react-icons/fi'
 
 const Project=()=>{
 
@@ -20,28 +21,31 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className='bg-white w-full h-screen justify-center items-center flex flex-col dark:bg-black-gray'>
-        <p className='text-6xl font-semibold text-center font-mono py-10 text-black dark:text-white'>PROJECTS</p>
+    <div id="projects" className='bg-white w-full h-auto justify-center items-center flex flex-col dark:bg-black-gray'>
+        <div className="w-full sm:min-h-screen h-fit py-24 sm:py-0">
 
-
-         <div className=' w-full h-full justify-center items-center grid grid-cols-1 md:grid-cols-3 px-6 md:pl-44'>
-            {images.map((items)=>(
-              <div key={items.id} className='w-96 h-[220px] relative  rounded-2xl group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
-                
-                  <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
-                    <img src={items.images} alt="" className='w-full h-full rounded-xl opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top'/>
-                  </a>
-
-                  <div className='w-full h-full absolute bg-black/40 opacity-0 hover:opacity-100 justify-center items-center flex text-xl rounded-xl z-40 top-0 left-0 flex-col '>
-                    <div className='text-white opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-700'>
-                      {items.title}
-                    </div>
-                  </div>
+            <div className="w-full text-center"><p className='text-5xl sm:text-6xl font-bold font-mono pb-12 sm:py-12 text-black dark:text-white'>PROJECTS</p></div>
+            
+            <div className=' w-full mx-auto sm:px-20 sm:pl-44 justify-center items-center grid grid-cols-2 gap-6 md:grid-cols-3 px-10 md:gap-6 '>
+              {images.map((items)=>(
+                <div key={items.id} className='w-full md:h-56 relative  rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
                   
-              </div>
-            ))}          
-         </div> 
-          
+                    <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
+                      <img src={items.images} alt="" className='w-full h-full rounded-md opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top object-cover'/>
+                    </a>
+
+                    <div className='w-full h-full absolute bg-black/40 opacity-0 hover:opacity-100 justify-center items-center flex  rounded-md z-40 top-0 left-0 flex-col '>
+                      <div className='text-white opacity-0 group-hover:opacity-100 scale-[1.3] text-sm text-center  md:text-xl group-hover:scale-[1] transition-all ease-out duration-700'>
+                        {items.title}
+                      </div>
+                      <div className='text-white animate-animation1-bounce pt-3'><FiLink2 size={30}/></div>
+                    </div>
+                    
+                </div>
+              ))}          
+            </div> 
+        
+        </div>  
     </div>
   )
 }

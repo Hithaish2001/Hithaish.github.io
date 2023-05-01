@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .input-box input:valid ~ span,
+    .input-box input:focus ~ span
+    {
+        @apply dark:text-white text-black translate-x-2 font-medium -translate-y-7 bg-white dark:bg-gray-950 text-[0.85em] px-2 transition-all duration-700 ease-in-out
+    }
+}

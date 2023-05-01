@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import pic from '../assets/portfolio.png'
+import pic from '../assets/portfolio.jpg'
 import '../components/about.css'
 import css from "../assets/css.png";
 import html from "../assets/html.png";
@@ -24,20 +24,20 @@ const About=()=> {
   return (
 
     <div id="about" className='w-full h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470]'>
-        <p className='text-4xl sm:text-6xl font-bold text-center sm:pb-16 font-mono text-black dark:text-white py-6'>About Me</p>
-        <div name="" className='sm:flex w-full justify-center items-start sm:pl-32'>
+        <div className="w-full"><p className='text-5xl sm:text-6xl font-bold text-center sm:pb-20 pb-9 font-mono text-black dark:text-white'>About Me</p></div>
+        <div name="" className='sm:flex w-full justify-center items-start pl-4 sm:pl-32'>
 
             
-            <div className="hidden lg:flex w-72 h-96 flex-none">
+            <div className="hidden md:flex w-72 h-96 flex-none">
 
               <div className="absolute w-56 h-96 dark:bg-gray-700 bg-stone-200 rounded-3xl"></div>
-              <img src={pic} alt="" className='rounded-3xl z-20 -translate-y-6 -translate-x-7 hover:translate-y-0 hover:translate-x-0 duration-700' />
+              <img src={pic} alt="" className='rounded-3xl z-20 -translate-y-6 -translate-x-7 hover:translate-y-0 hover:translate-x-0 duration-700 ease-in-out' />
 
             </div>
 
-            <div className="max-w-[900px]  text-sm sm:text-lg font-normal px-8 sm:pl-20 text-black dark:text-white">
+            <div className="max-w-[900px]  text-base sm:text-xl font-normal px-9 sm:pl-20 text-black dark:text-white">
                 <p className='text-justify'>Hello guys, welcome to my protfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-                <ul className='text-sm md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
+                <ul className='text-base text-black  dark:text-gray-400 sm:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
                   <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>
@@ -47,13 +47,13 @@ const About=()=> {
                 <div className='mainContainer'>
                     
                     {selected === 'skills' && (
-                      <div name="skills"  className={`content active-content flex h-72  relative top-6 -left-5`}>
-                        <ol className='grid grid-cols-3 sm:grid-cols-5 justify-center items-center  font-medium'>
-                          <li><img src={html} alt='HTMl' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
-                          <li><img src={css} alt='css' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
-                          <li><img src={java} alt='java' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
-                          <li><img src={react} alt='react' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
-                          <li><img src={tailwind} alt='tailwind' className='w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>
+                      <div name="skills"  className={`content active-content flex h-72  relative top-12 sm:top-6 -left-5`}>
+                        <ol className='grid grid-cols-4 sm:grid-cols-5 justify-center items-center font-medium'>
+                          <li><img src={html} alt='HTMl' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
+                          <li><img src={css} alt='css' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
+                          <li><img src={java} alt='java' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
+                          <li><img src={react} alt='react' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
+                          <li><img src={tailwind} alt='tailwind' className='w-32 sm:w-44 px-3 sm:pt-0 pt-5 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>
                         </ol>
                       </div>
                      )}
