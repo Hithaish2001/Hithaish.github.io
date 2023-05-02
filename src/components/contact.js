@@ -31,7 +31,7 @@ const contact=()=> {
                     <span className='absolute left-0 p-2  text-gray-700'>Message</span>
                   </div>
                   <div className='relative justify-center items-center flex'>
-                  <button className="absolute border-2 top-2 text-black bg-neutral-300 shadow-lg dark:bg-black-gray dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-black font-bold py-2 px-4 rounded-lg transition-all duration-700 ease-in-out" type="submit">Submit</button>
+                  <button className="absolute border-2 top-2 text-black bg-neutral-300 shadow-lg dark:bg-black-gray dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-black font-bold py-2 px-4 rounded-lg transition-all duration-500 ease-in-out" type="submit">Submit</button>
                   </div>
               </form>
           </div>

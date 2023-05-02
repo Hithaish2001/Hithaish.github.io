@@ -28,19 +28,23 @@ const Project=()=>{
             
             <div className=' w-full mx-auto sm:px-20 sm:pl-44 justify-center items-center grid grid-cols-2 gap-6 md:grid-cols-3 px-10 md:gap-6 '>
               {images.map((items)=>(
+                
                 <div key={items.id} className='w-full md:h-56 relative  rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
                   
-                    <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
+                    
                       <img src={items.images} alt="" className='w-full h-full rounded-md opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top object-cover'/>
-                    </a>
+                 
 
                     <div className='w-full h-full absolute bg-black/40 opacity-0 hover:opacity-100 justify-center items-center flex  rounded-md z-40 top-0 left-0 flex-col '>
-                      <div className='text-white opacity-0 group-hover:opacity-100 scale-[1.3] text-sm text-center  md:text-xl group-hover:scale-[1] transition-all ease-out duration-700'>
-                        {items.title}
-                      </div>
-                      <div className='text-white animate-animation1-bounce pt-3'><FiLink2 size={30}/></div>
+                      
+                      <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
+                        <div className='text-white opacity-0 group-hover:opacity-100 scale-[1.3] text-sm text-center  md:text-xl group-hover:scale-[1] transition-all ease-out duration-700'>
+                          {items.title}
+                        </div>
+                        <div className='text-white animate-animation1-bounce pt-3 justify-center items-center flex'><FiLink2 size={30}/></div>
+                      </a>
+
                     </div>
-                    
                 </div>
               ))}          
             </div> 
