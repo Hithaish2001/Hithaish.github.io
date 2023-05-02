@@ -36,8 +36,8 @@ const About=()=> {
             </div>
 
             <div className="max-w-[900px]  text-base sm:text-xl font-normal px-9 sm:pl-20 text-black dark:text-white">
-                <p className='text-justify'>Hello guys, welcome to my protfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-                <ul className='text-base text-black  dark:text-gray-400 sm:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase '>
+                <p className='text-justify'>Hello guys, welcome to my portfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
+                <ul className='text-base text-black  dark:text-gray-400 sm:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
                   <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>

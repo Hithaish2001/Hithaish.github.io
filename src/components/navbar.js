@@ -17,6 +17,7 @@ const Navbar=()=>{
     const scrollToSection = (id) => {
       const element = document.getElementById(id);
       element.scrollIntoView({ behavior: 'smooth' });
+      setNav(!nav)
     };
 
     const [mode, setmode] = useState(sun)

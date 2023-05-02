@@ -21,7 +21,7 @@ const Home=()=>{
 
                 <div className="sm:hidden space-y-8 translate-y-3 justify-center items-center flex flex-col">
                     <div className="flex pt-10">
-                        <div className="relative rounded-full w-[255px] h-[255px] blur-lg bg-slate-800 animate-pulse"></div>
+                        <div className="relative rounded-full w-[230px] h-[230px] blur-2xl bg-white animate-pulse"></div>
                         <img src={pic} alt="" className='absolute object-cover rounded-full w-56 h-56 z-20 translate-x-3 translate-y-3' />
                     </div>
                     <div className="flex space-x-6">

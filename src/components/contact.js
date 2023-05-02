@@ -16,19 +16,19 @@ const contact=()=> {
                 </div>
                
              
-              <form action="https://getform.io/f/d5e65022-78c1-48b5-b9d3-b69012c174d4" method='POST' className='text-lg flex flex-col text-black dark:text-white pb-16 sm:pb-5 space-y-9'>
+              <form action="https://getform.io/f/d5e65022-78c1-48b5-b9d3-b69012c174d4" method='POST' className='w-80 text-lg flex flex-col text-black dark:text-white pb-16 sm:pb-5 space-y-9'>
                   
-                  <div className="input-box relative w-80">
+                  <div className="input-box relative px-2">
                     <input type="text" id="fname" name="name"  className='w-full group outline-none p-4 rounded-md border bg-transparent focus:border-2 dark:focus:border-white focus:border-black border-gray-700' required autoComplete='off'/>
-                    <span className='absolute left-0 p-2 text-gray-700'>Name</span>
+                    <span className='absolute left-0 p-3 pl-5 text-gray-700'>Name</span>
                   </div>
-                  <div className="input-box relative w-80">
+                  <div className="input-box relative px-2">
                     <input type="text" id="lname" name="email"  className='w-full group outline-none p-4 rounded-md border bg-transparent focus:border-2 dark:focus:border-white focus:border-black border-gray-700' required autoComplete='off'/>
-                    <span className='absolute left-0 p-2  text-gray-700'>Mail-ID</span>
+                    <span className='absolute left-0 p-3 pl-5  text-gray-700'>Mail-ID</span>
                   </div>
-                  <div className="input-box relative w-80">
+                  <div className="input-box relative px-2">
                     <input type="text" id="lname" name="feedback" className='w-full group outline-none p-4 rounded-md border bg-transparent focus:border-2 dark:focus:border-white focus:border-black border-gray-700' required autoComplete='off'/>
-                    <span className='absolute left-0 p-2  text-gray-700'>Message</span>
+                    <span className='absolute left-0 p-3 pl-5  text-gray-700'>Message</span>
                   </div>
                   <div className='relative justify-center items-center flex'>
                   <button className="absolute border-2 top-2 text-black bg-neutral-300 shadow-lg dark:bg-black-gray dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-black font-bold py-2 px-4 rounded-lg transition-all duration-500 ease-in-out" type="submit">Submit</button>
