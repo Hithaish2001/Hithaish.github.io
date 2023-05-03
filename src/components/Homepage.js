@@ -8,18 +8,18 @@ import pic from '../assets/rounded image.jpg'
 const Home=()=>{
 
     return(
-        <div id='home' className="w-full h-fit sm:h-screen bg-white dark:bg-black-gray justify-center items-center flex relative border">
-            <div className="home flex sm:flex-row flex-col w-full h-full justify-center items-center py-14 sm:py-0">
+        <div id='home' className="w-full h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex relative">
+            <div className="home flex md:flex-row flex-col w-full h-full justify-center items-center py-14 md:py-0">
                 <div className="intro dark:text-white text-black">
-                    <h1 className="hidden sm:block text-2xl font-semibold">Hi, My name is</h1>
-                    <h1 className="text-5xl sm:text-9xl font-bold pt-2 bg-black-top2 bg-clip-text text-transparent dark:bg-black-top dark:bg-clip-text dark:text-transparent font-serif"><span className="sm:hidden text-gray-400 font-medium">Hi, I'm</span> Hithaish</h1>
-                    <h1 className="text-2xl sm:text-3xl font-bold"><span className="bg-gradient-to-r from-[#de6262] to-[#ffb88c] bg-clip-text text-transparent">Frontend</span> Developer</h1>
-                    <div className="translate-y-4 sm:translate-y-7 sm:w-32 w-28 h-10 sm:h-12">
+                    <h1 className="hidden md:block text-2xl font-semibold">Hi, My name is</h1>
+                    <h1 className="text-5xl md:text-9xl font-bold pt-2 bg-black-top2 bg-clip-text text-transparent dark:bg-black-top dark:bg-clip-text dark:text-transparent font-serif"><span className="md:hidden text-gray-400 font-medium">Hi, I'm</span> Hithaish</h1>
+                    <h1 className="text-2xl md:text-3xl font-bold"><span className="bg-gradient-to-r from-[#de6262] to-[#ffb88c] bg-clip-text text-transparent">Frontend</span> Developer</h1>
+                    <div className="translate-y-4 md:translate-y-7 md:w-32 w-28 h-10 md:h-12">
                         <a href="https://drive.google.com/file/d/1OZdmdhMPxMJvfTT4iRVfo21bAyoipKAK/view?usp=share_link" target="_blank" rel="noreferrer" className="flex border-2 w-full justify-center items-center space-x-3 dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white hover:bg-black hover:text-white text-center h-full text-lg sm:text-xl font-medium rounded-md transition-all duration-700 ease-in-out" type="submit"><span >Resume</span> <FiExternalLink size={22}/></a>
                     </div>
                 </div>
 
-                <div className="sm:hidden h-fit w-full space-y-12 justify-center items-center flex flex-col pt-20">
+                <div className="md:hidden h-fit w-full space-y-12 justify-center items-center flex flex-col pt-20">
                     <div className="flex">
                         <div className="relative rounded-full w-[215px] h-[215px] blur-xl bg-black dark:bg-white animate-pulse"></div>
                         <img src={pic} alt="" className='absolute object-cover rounded-full w-56 h-56 z-20 -translate-y-2' />

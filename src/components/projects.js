@@ -21,14 +21,14 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className='bg-white w-full h-fit sm:h-screen justify-center items-center flex flex-col dark:bg-black-gray py-14 sm:py-0 border-4'>
+    <div id="projects" className='bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col dark:bg-black-gray py-14 md:py-0'>
 
-            <div className="w-full text-center"><p className='text-5xl sm:text-6xl font-bold font-mono p-12 text-black dark:text-white'>PROJECTS</p></div>
+            <div className="w-full text-center"><p className='text-5xl md:text-6xl font-bold font-mono p-12 text-black dark:text-white'>PROJECTS</p></div>
             
             <div className=' w-[90%] h-2/3 grid grid-cols-2 md:grid-cols-3 gap-8'>
               {images.map((items)=>(
                 
-                <div key={items.id} className='w-full h-full relative rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100'>
+                <div key={items.id} className='w-full h-full relative rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
                   
                     
                       <img src={items.images} alt="" className='w-full h-full rounded-md opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top object-cover'/>

@@ -44,11 +44,11 @@ const Navbar=()=>{
       }
 
     return(
-       <main className="w-screen  text-black dark:text-white z-50 border" id="navbar">
+       <main className="w-screen  text-black dark:text-white z-50" id="navbar">
             <div className="nav z-50 flex justify-between items-center dark:bg-black-gray bg-white">
 
 
-                <div className="hidden sm:flex w-full h-24 justify-between items-center">
+                <div className="hidden md:flex w-full h-24 justify-between items-center">
                     <div className="logo flex">
                         <h1 className="text-2xl font-semibold px-16">Portfolio.</h1>
                     </div>
@@ -65,8 +65,8 @@ const Navbar=()=>{
 
                 {/* mobile navbar */}
 
-                <div className="sm:hidden w-full h-16 ">
-                  <div className="h-full flex items-center justify-between w-full sticky z-10 dark:text-white text-zinc-700 border" id="navbar">
+                <div className="md:hidden w-full h-16 ">
+                  <div className="h-full flex items-center justify-between w-full sticky z-10 dark:text-white text-zinc-700" id="navbar">
                       <div className="px-5"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-9 h-9 cursor-pointer hover:rotate-45 transition-all duration-700"/></div>
                       <div className="px-5" onClick={handleclick}>{!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}</div>
                   </div>
@@ -100,7 +100,7 @@ const Navbar=()=>{
             </ul>
             </div>
 
-            <div className="fixed bottom-2 right-2 sm:right-6 sm:bottom-6 w-10 sm:w-12 h-10 sm:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg">
+            <div className="fixed bottom-2 right-2 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg">
                 <div className="w-8 h-8 translate-y-1 cursor-pointer" onClick={() => scrollToSection('home')}><img src={uparrow} alt=""  className="animate-animation1-bounce bottom-0"/></div>
             </div>
 

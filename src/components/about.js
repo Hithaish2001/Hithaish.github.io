@@ -23,9 +23,9 @@ const About=()=> {
 
   return (
 
-    <div id="about" className='w-full border sm:h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470] py-14 sm:py-0'>
-        <div className="w-full"><p className='text-5xl sm:text-6xl font-bold text-center sm:pb-20 pb-9 font-mono text-black dark:text-white'>About Me</p></div>
-        <div name="" className='sm:flex w-full justify-center items-start pl-4 sm:pl-32'>
+    <div id="about" className='w-full h-fit lg:h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470] py-14 xl:py-0'>
+        <div className="w-full"><p className='text-5xl md:text-6xl font-bold text-center md:pb-20 pb-9 font-mono text-black dark:text-white'>About Me</p></div>
+        <div name="" className='md:flex w-full justify-center items-start px-2 md:pl-32'>
 
             
             <div className="hidden md:flex w-72 h-96 flex-none">
@@ -35,25 +35,25 @@ const About=()=> {
 
             </div>
 
-            <div className="max-w-[900px] h-full text-base sm:text-xl px-9 sm:pl-20 text-black dark:text-white">
+            <div className="max-w-[900px] h-full text-base md:text-xl px-9 md:pl-20 text-black dark:text-white">
                 <p className='text-justify font-[470]'>Hello guys, welcome to my portfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-                <ul className='text-base text-black  dark:text-gray-400 sm:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
+                <ul className='text-base text-black  dark:text-gray-400 md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
                   <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>
                 </ul>
 
 
-                <div className='mainContainer w-full h-[310px]'>
+                <div className='mainContainer w-full h-[310px] '>
                     
                     {selected === 'skills' && (
-                      <div name="skills"  className={`content active-content flex w-full h-full sm:top-6 -left-5`}>
+                      <div name="skills"  className={`content active-content flex w-full h-full md:top-6 -left-5`}>
                         <ol className='w-full h-full grid grid-cols-5 justify-center items-center font-medium'>
-                          <li><img src={html} alt='HTMl' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
-                          <li><img src={css} alt='css' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
-                          <li><img src={java} alt='java' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
-                          <li><img src={react} alt='react' className='w-32 sm:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
-                          <li><img src={tailwind} alt='tailwind' className='w-28 sm:w-44 px-3  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>
+                          <li><img src={html} alt='HTMl' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
+                          <li><img src={css} alt='css' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
+                          <li><img src={java} alt='java' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
+                          <li><img src={react} alt='react' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
+                          <li><img src={tailwind} alt='tailwind' className='w-28 md:w-44 px-3  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>
                         </ol>
                       </div>
                      )}
