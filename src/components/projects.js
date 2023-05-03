@@ -25,10 +25,10 @@ const Project=()=>{
 
             <div className="w-full text-center"><p className='text-5xl sm:text-6xl font-bold font-mono p-12 text-black dark:text-white'>PROJECTS</p></div>
             
-            <div className=' w-[90%] h-2/3 grid grid-cols-2 md:grid-cols-3 border-4'>
+            <div className=' w-[90%] h-2/3 grid grid-cols-2 md:grid-cols-3 gap-8'>
               {images.map((items)=>(
                 
-                <div key={items.id} className='w-full h-full relative p-5 rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
+                <div key={items.id} className='w-full h-full relative rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100'>
                   
                     
                       <img src={items.images} alt="" className='w-full h-full rounded-md opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top object-cover'/>

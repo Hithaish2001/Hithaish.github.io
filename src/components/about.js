@@ -44,7 +44,7 @@ const About=()=> {
                 </ul>
 
 
-                <div className='mainContainer w-full h-[310px] border'>
+                <div className='mainContainer w-full h-[310px]'>
                     
                     {selected === 'skills' && (
                       <div name="skills"  className={`content active-content flex w-full h-full sm:top-6 -left-5`}>
