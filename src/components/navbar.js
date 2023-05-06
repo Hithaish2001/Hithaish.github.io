@@ -53,7 +53,7 @@ const Navbar=()=>{
                         <h1 className="text-2xl font-semibold px-16">Portfolio.</h1>
                     </div>
                     <div className="flex font-medium justify-center items-center px-5">
-                        <li className="list-none px-5"><Link to="/"   onClick={() => scrollToSection('home')} className="links">HOME</Link></li>
+                        <li className="list-none px-5"><Link to="#"   onClick={() => scrollToSection('home')} className="links">HOME</Link></li>
                         <li className="list-none px-5"><Link to="/about"  onClick={() => scrollToSection('about')}  className="links">ABOUT</Link></li>
                         <li className="list-none px-5"><Link to="/projects"   onClick={() => scrollToSection('projects')} className="links">PROJECTS</Link></li>
                         <li className="list-none px-5"><Link to="/contact"  onClick={() => scrollToSection('contact')}  className="links">CONTACT  ME</Link></li>
@@ -72,7 +72,7 @@ const Navbar=()=>{
                   </div>
 
                   <ul className={!nav ? "hidden" : "absolute dark:text-white font-medium text-lg text-zinc-700 top-0 right-0 w-[50%] h-screen opacity-80 bg-white dark:bg-gray-700 flex flex-col justify-center items-center space-y-5  "}>
-                      <li className="list-none "><Link to="/"   onClick={() => scrollToSectionMobile('home')} className="hover:text-black hover:font-medium dark:hover:text-white">HOME</Link></li>
+                      <li className="list-none "><Link to="#"   onClick={() => scrollToSectionMobile('home')} className="hover:text-black hover:font-medium dark:hover:text-white">HOME</Link></li>
                       <li className="list-none "><Link to="/about"  onClick={() => scrollToSectionMobile('about')} className="hover:text-black hover:font-medium dark:hover:text-white">ABOUT</Link></li>
                       <li className="list-none "><Link to="/projects"   onClick={() => scrollToSectionMobile('projects')} className="hover:text-black hover:font-medium dark:hover:text-white">PROJECTS</Link></li>
                       <li className="list-none "><Link to="/contact"  onClick={() => scrollToSectionMobile('contact')} className="hover:text-black hover:font-medium dark:hover:text-white">CONTACT  ME</Link></li>
