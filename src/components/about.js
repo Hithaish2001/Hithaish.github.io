@@ -23,8 +23,8 @@ const About=()=> {
 
   return (
 
-    <div id="about" className='w-full h-fit lg:h-screen flex justify-center items-center flex-col bg-white dark:bg-black-gray font-[470] py-14 xl:py-0'>
-        <div className="w-full"><p className='text-5xl md:text-6xl font-bold text-center md:pb-20 pb-9 font-mono text-black dark:text-white'>About Me</p></div>
+    <div id="about" className='w-full h-fit lg:h-screen flex justify-center items-center flex-col md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray font-[470] py-14 xl:py-0 '>
+        <div className="w-full"><p className='text-5xl md:text-6xl font-bold text-center md:pb-20 pb-9 font-mono md:text-black md:dark:text-white text-black dark:text-white'>About Me</p></div>
         <div name="" className='md:flex w-full justify-center items-start px-2 md:pl-32'>
 
             
@@ -35,32 +35,32 @@ const About=()=> {
 
             </div>
 
-            <div className="max-w-[900px] h-full text-base md:text-xl px-9 md:pl-20 text-black dark:text-white">
+            <div className="max-w-[900px] h-full text-base md:text-xl px-9 md:pl-20 md:text-black  text-black dark:text-white md:dark:text-white">
                 <p className='text-justify font-[470]'>Hello guys, welcome to my portfolio! I am a frontend Developer engineering student, interested in developing web applications and exploring new technologies. Currently I'm working on reactjs projects for learning</p>
-                <ul className='text-base text-black  dark:text-gray-400 md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
+                <ul className='text-base md:text-black text-black md:dark:text-gray-400 dark:text-gray-400 md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
                   <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>
                 </ul>
 
 
-                <div className='mainContainer w-full h-[310px] '>
+                <div className='mainContainer w-screen md:w-full h-fit md:h-[310px] p-5'>
                     
                     {selected === 'skills' && (
-                      <div name="skills"  className={`content active-content flex w-full h-full md:top-6 -left-5`}>
-                        <ol className='w-full h-full grid grid-cols-5 justify-center items-center font-medium'>
-                          <li><img src={html} alt='HTMl' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>HTML</p></li>
-                          <li><img src={css} alt='css' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>CSS</p></li>
-                          <li><img src={java} alt='java' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>JAVA</p></li>
-                          <li><img src={react} alt='react' className='w-32 md:w-44 px-3 animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>REACTJS</p></li>
-                          <li><img src={tailwind} alt='tailwind' className='w-28 md:w-44 px-3  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white pt-3 text-center font-sans'>TAILWIND CSS</p></li>
+                      <div name="skills"  className={` content active-content flex w-full h-full md:pt-0 -translate-x-14 `}>
+                        <ol className='w-full h-full grid grid-cols-3 md:grid-cols-5 gap-y-3 md:gap-y-0  justify-items-center items-center font-medium p-5 '>
+                          <li><img src={html} alt='HTMl' className='w-24  md:w-44 p-1   animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans'>HTML</p></li>
+                          <li><img src={css} alt='css' className='w-24  md:w-44 p-1  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans'>CSS</p></li>
+                          <li><img src={java} alt='java' className='w-24  md:w-44 p-1  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans'>JAVA</p></li>
+                          <li><img src={react} alt='react' className='w-24  md:w-44 p-1  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans'>REACTJS</p></li>
+                          <li><img src={tailwind} alt='tailwind' className='w-24  md:w-44 p-1  animate-animation-bounce drop-shadow-xl'/><p className='text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans'>TAILWIND CSS</p></li>
                         </ol>
                       </div>
                      )}
 
                     
                     {selected=== 'education' && (
-                      <div name='education' className='pt-7 pl-4 text-black dark:text-white w-full h-full'>
+                      <div name='education' className=' md:text-black md:dark:text-white text-black dark:text-white w-full h-full'>
                         <ol className='list-disc flex flex-col space-y-5 font-[470]'>
                           <li><span className='font-medium'>Graduating 2023</span><span className='flex'>B.E IN COMPUTER SCIENCE AND ENGINEERING &nbsp; | &nbsp; CGPA: 8.03</span></li>
                           <li><span className='font-medium'>Graduated 2019</span><span className='flex flex-col'>PUC &nbsp; | &nbsp; Percentage: 89.5</span></li>
@@ -71,7 +71,7 @@ const About=()=> {
 
 
                     {selected === 'experience' && (
-                      <div name='experience' className='pt-7 pl-4 text-black dark:text-white w-full h-full '>
+                      <div name='experience' className=' md:text-black md:dark:text-white text-black dark:text-white w-full h-full '>
                         <ol className='list-none font-[470] space-y-1 text-justify'>
                         <p className='font-semibold py-1'> Full Stack Developer Intern (Aug 2022-Sep 2022)</p>
                         <li className='list-disc'>I have done one month internship at <a className='font-medium underline' href='https://thaniyatech.com/'>Thaniya Technologies IT Solutions LLP</a>, Mangaluru.</li>

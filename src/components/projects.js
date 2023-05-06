@@ -21,9 +21,9 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className='bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col dark:bg-black-gray py-14 md:py-0'>
+    <div id="projects" className='bg-white md:bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col md:dark:bg-black-gray dark:bg-black-gray py-14 md:py-0'>
 
-            <div className="w-full text-center"><p className='text-5xl md:text-6xl font-bold font-mono p-12 text-black dark:text-white'>PROJECTS</p></div>
+            <div className="w-full text-center"><p className='text-5xl md:text-6xl font-bold font-mono pb-14 md:text-black text-black md:dark:text-white dark:text-white'>PROJECTS</p></div>
             
             <div className=' w-[90%] h-2/3 grid grid-cols-2 md:grid-cols-3 gap-8'>
               {images.map((items)=>(
@@ -37,10 +37,10 @@ const Project=()=>{
                     <div className='w-full h-full absolute bg-black/40 opacity-0 hover:opacity-100 justify-center items-center flex  rounded-md z-40 top-0 left-0 flex-col '>
                       
                       <a href={items.url} rel='noreferrer' target='_blank' className='relative '>
-                        <div className='text-white opacity-0 group-hover:opacity-100 scale-[1.3] text-sm text-center  md:text-xl group-hover:scale-[1] transition-all ease-out duration-700'>
+                        <div className='text-white md:text-white opacity-0 group-hover:opacity-100 scale-[1.3] text-sm text-center  md:text-xl group-hover:scale-[1] transition-all ease-out duration-700'>
                           {items.title}
                         </div>
-                        <div className='text-white animate-animation1-bounce pt-3 justify-center items-center flex'><FiLink2 size={30}/></div>
+                        <div className='text-white md:text-white animate-animation1-bounce pt-3 justify-center items-center flex'><FiLink2 size={25}/></div>
                       </a>
 
                     </div>

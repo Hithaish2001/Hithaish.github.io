@@ -8,7 +8,7 @@ import pic from '../assets/rounded image.jpg'
 const Home=()=>{
 
     return(
-        <div id='home' className="w-full h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex relative">
+        <div id='home' className="w-full h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex">
             <div className="home flex md:flex-row flex-col w-full h-full justify-center items-center py-14 md:py-0">
                 <div className="intro dark:text-white text-black">
                     <h1 className="hidden md:block text-2xl font-semibold">Hi, My name is</h1>

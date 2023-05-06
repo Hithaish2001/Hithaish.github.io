@@ -19,8 +19,8 @@ const Navbar=()=>{
       element.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const scrollToSectionMobile = () => {
-      const element = document.getElementById('home');
+    const scrollToSectionMobile = (id) => {
+      const element = document.getElementById(id);
       element.scrollIntoView({ behavior: 'smooth' });
       setNav(!nav);
     };
@@ -57,7 +57,7 @@ const Navbar=()=>{
                         <li className="list-none px-5"><Link to="/about"  onClick={() => scrollToSection('about')}  className="links">ABOUT</Link></li>
                         <li className="list-none px-5"><Link to="/projects"   onClick={() => scrollToSection('projects')} className="links">PROJECTS</Link></li>
                         <li className="list-none px-5"><Link to="/contact"  onClick={() => scrollToSection('contact')}  className="links">CONTACT  ME</Link></li>
-                        <li className="list-none px-5 pt-5"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-12 h-12 cursor-pointer -translate-y-3 hover:rotate-45 transition-all duration-700"/></li>
+                        <li className="list-none px-5 pt-5" id="togglemode"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-12 h-12 cursor-pointer -translate-y-3 hover:rotate-45 transition-all duration-700"/></li>
                     </div>
                 </div>
                 
@@ -65,13 +65,13 @@ const Navbar=()=>{
 
                 {/* mobile navbar */}
 
-                <div className="md:hidden w-full h-16 ">
+                <div className="md:hidden w-full h-16 z-50" id="navbar">
                   <div className="h-full flex items-center justify-between w-full sticky z-10 dark:text-white text-zinc-700" id="navbar">
                       <div className="px-5"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-9 h-9 cursor-pointer hover:rotate-45 transition-all duration-700"/></div>
                       <div className="px-5" onClick={handleclick}>{!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}</div>
                   </div>
 
-                  <ul className={!nav ? "hidden" : "absolute dark:text-white font-medium text-lg text-zinc-700 top-0 left-0 w-full h-screen bg-white dark:bg-neutral-900 flex flex-col justify-center items-center space-y-5  "}>
+                  <ul className={!nav ? "hidden" : "absolute dark:text-white font-medium text-lg text-zinc-700 top-0 right-0 w-[50%] h-screen opacity-80 bg-white dark:bg-gray-700 flex flex-col justify-center items-center space-y-5  "}>
                       <li className="list-none "><Link to="/"   onClick={() => scrollToSectionMobile('home')} className="hover:text-black hover:font-medium dark:hover:text-white">HOME</Link></li>
                       <li className="list-none "><Link to="/about"  onClick={() => scrollToSectionMobile('about')} className="hover:text-black hover:font-medium dark:hover:text-white">ABOUT</Link></li>
                       <li className="list-none "><Link to="/projects"   onClick={() => scrollToSectionMobile('projects')} className="hover:text-black hover:font-medium dark:hover:text-white">PROJECTS</Link></li>
