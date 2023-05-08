@@ -23,7 +23,7 @@ const About=()=> {
 
   return (
 
-    <div id="about" className='w-full h-fit lg:h-screen flex justify-center items-center flex-col md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray font-[470] py-14 xl:py-0 '>
+    <div id="about" className='w-full h-fit lg:h-screen flex justify-center items-center flex-col md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray font-[470] py-14 xl:py-0 select-none'>
         <div className="w-full"><p className='text-5xl md:text-6xl font-bold text-center md:pb-20 pb-9 font-mono md:text-black md:dark:text-white text-black dark:text-white'>About Me</p></div>
         <div name="" className='md:flex w-full justify-center items-start px-2 md:pl-32'>
 
@@ -40,7 +40,7 @@ const About=()=> {
                 <ul className='text-base md:text-black text-black md:dark:text-gray-400 dark:text-gray-400 md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full'>
                   <li className={`navelements  ${selected === 'skills' ? 'active-navelements' : ''}`} onClick={() => handleClick('skills')}>Skills</li>
                   <li className={`navelements  ${selected === 'education' ? 'active-navelements' : ''}`}  onClick={() => handleClick('education')}>Education</li>
-                  <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experirence</li>
+                  <li className={`navelements  ${selected === 'experience' ? 'active-navelements' : ''}`}  onClick={() => handleClick('experience')}>Experience</li>
                 </ul>
 
 

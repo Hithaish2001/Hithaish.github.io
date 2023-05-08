@@ -4,7 +4,7 @@ import './contact.css'
 
 const contact=()=> {
   return (
-    <div id='contact' className=' w-full h-fit sm:h-screen flex flex-col justify-center items-center md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray py-14 sm:py-0 '>
+    <div id='contact' className=' w-full h-fit sm:h-screen flex flex-col justify-center items-center md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray py-14 sm:py-0 select-none'>
         <div className="w-ful text-center"><p className='text-5xl sm:text-6xl font-semibold uppercase font-mono  pb-9 md:text-black  text-black md:dark:text-white dark:text-white'>contact me</p></div>
          <div className="bg-white md:bg-white  dark:bg-gray-950 md:dark:bg-gray-950  shadow-xl sm:hover:shadow-3xl sm:dark:shadow-gray-800 w-[75%] h-[70%] rounded-[39px] relative justify-around items-center flex  transition-all duration-500 ease-in-out">
             

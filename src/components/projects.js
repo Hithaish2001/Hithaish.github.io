@@ -21,14 +21,14 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className='bg-white md:bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col md:dark:bg-black-gray dark:bg-black-gray py-14 md:py-0'>
+    <div id="projects" className='bg-white md:bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col md:dark:bg-black-gray dark:bg-black-gray py-14 md:py-0 select-none'>
 
             <div className="w-full text-center"><p className='text-5xl md:text-6xl font-bold font-mono pb-14 md:text-black text-black md:dark:text-white dark:text-white'>PROJECTS</p></div>
             
-            <div className=' w-[90%] h-2/3 grid grid-cols-2 md:grid-cols-3 gap-8'>
+            <div className=' w-[90%] h-2/3 grid grid-cols-1 pt-5 md:pt-0 justify-items-center md:grid-cols-3 gap-8 bg-gray-700 md:bg-transparent border-2 md:border-none rounded-md overflow-auto'>
               {images.map((items)=>(
                 
-                <div key={items.id} className='w-full h-full relative rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
+                <div key={items.id} className='w-[90%] h-full relative rounded-md group overflow-hidden cursor-pointer hover:shadow-xl dark:hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-amber-100 ring-1 ring-black'>
                   
                     
                       <img src={items.images} alt="" className='w-full h-full rounded-md opacity-100 group-hover:opacity-75 relative z-10 scale-100 group-hover:scale-105 transition-all duration-500 ease-out origin-top object-cover'/>
