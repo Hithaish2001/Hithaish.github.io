@@ -100,8 +100,8 @@ const Navbar=()=>{
             </ul>
             </div>
 
-            <div className="fixed bottom-2 right-2 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg">
-                <div className="w-6 h-6 translate-y-1 cursor-pointer" onClick={() => scrollToSection('home')}><img src={uparrow} alt=""  className="animate-animation1-bounce bottom-0"/></div>
+            <div className="fixed bottom-2 right-2 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg cursor-pointer" onClick={() => scrollToSection('home')}>
+                <div className="w-6 h-6 translate-y-1 "><img src={uparrow} alt=""  className="animate-animation1-bounce bottom-0"/></div>
             </div>
 
        </main>
