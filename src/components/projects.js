@@ -21,7 +21,7 @@ const Project=()=>{
 
   return (
     
-    <div id="projects" className='bg-white md:bg-white w-full h-fit md:h-screen justify-center items-center flex flex-col md:dark:bg-black-gray dark:bg-black-gray py-14 md:py-0 select-none'>
+    <div id="projects" className='bg-white md:bg-white w-screen h-fit md:h-screen justify-center items-center flex flex-col md:dark:bg-black-gray dark:bg-black-gray py-14 md:py-0 select-none'>
 
             <div className="w-full text-center"><p className='text-5xl md:text-6xl font-bold font-mono pb-14 md:text-black text-black md:dark:text-white dark:text-white'>PROJECTS</p></div>
             

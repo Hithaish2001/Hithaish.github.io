@@ -67,15 +67,15 @@ const Navbar=()=>{
 
                 <div className="md:hidden w-full h-16 z-50" id="navbar">
                   <div className="h-full flex items-center justify-between w-full sticky z-10 dark:text-white text-zinc-700 " id="navbar">
-                      <div className="px-5"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-9 h-9 cursor-pointer hover:rotate-45 transition-all duration-700"/></div>
+                      <div className="px-5 select-none"><img src={mode} alt="" onClick={handleMode} className="bg-gradient-to-br from-slate-300 to-white  rounded-full text-white p-2 w-9 h-9 cursor-pointer hover:rotate-45 transition-all duration-700"/></div>
                       <div className="px-5" onClick={handleclick}>{!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}</div>
                   </div>
 
                   <ul className={!nav ? "hidden" : "absolute dark:text-white font-medium text-lg text-zinc-700 top-0 right-0 w-[50%] h-screen opacity-80 bg-white dark:bg-gray-700 flex flex-col justify-center items-center space-y-5  "}>
-                      <li className="list-none "><Link to="#"   onClick={() => scrollToSectionMobile('home')} className="hover:text-black hover:font-medium dark:hover:text-white">HOME</Link></li>
-                      <li className="list-none "><Link to="/about"  onClick={() => scrollToSectionMobile('about')} className="hover:text-black hover:font-medium dark:hover:text-white">ABOUT</Link></li>
-                      <li className="list-none "><Link to="/projects"   onClick={() => scrollToSectionMobile('projects')} className="hover:text-black hover:font-medium dark:hover:text-white">PROJECTS</Link></li>
-                      <li className="list-none "><Link to="/contact"  onClick={() => scrollToSectionMobile('contact')} className="hover:text-black hover:font-medium dark:hover:text-white">CONTACT  ME</Link></li>
+                      <li className="list-none "><Link to="#"   onClick={() => scrollToSectionMobile('home')} className="hover:text-black hover:font-medium dark:hover:text-white select-none">HOME</Link></li>
+                      <li className="list-none "><Link to="/about"  onClick={() => scrollToSectionMobile('about')} className="hover:text-black hover:font-medium dark:hover:text-white select-none">ABOUT</Link></li>
+                      <li className="list-none "><Link to="/projects"   onClick={() => scrollToSectionMobile('projects')} className="hover:text-black hover:font-medium dark:hover:text-white select-none">PROJECTS</Link></li>
+                      <li className="list-none "><Link to="/contact"  onClick={() => scrollToSectionMobile('contact')} className="hover:text-black hover:font-medium dark:hover:text-white select-none">CONTACT  ME</Link></li>
                   </ul>
                 </div>
                 
@@ -100,7 +100,7 @@ const Navbar=()=>{
             </ul>
             </div>
 
-            <div className="fixed bottom-2 right-2 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg cursor-pointer" onClick={() => scrollToSection('home')}>
+            <div className="fixed bottom-5 right-5 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg cursor-pointer" onClick={() => scrollToSection('home')}>
                 <div className="w-6 h-6 translate-y-1 "><img src={uparrow} alt=""  className="animate-animation1-bounce bottom-0"/></div>
             </div>
 

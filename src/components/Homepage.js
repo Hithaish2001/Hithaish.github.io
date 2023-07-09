@@ -4,11 +4,12 @@ import {BsLinkedin, BsInstagram} from 'react-icons/bs';
 import { GrTwitter} from 'react-icons/gr';
 import { FiExternalLink } from 'react-icons/fi';
 import pic from '../assets/rounded image.jpg'
+import devimg from '../assets/devimage.png'
 
 const Home=()=>{
 
     return(
-        <div id='home' className="w-full h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex select-none">
+        <div id='home' className="w-screen h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex select-none">
             <div className="home flex md:flex-row flex-col w-full h-full justify-center items-center py-14 md:py-0">
                 <div className="intro dark:text-white text-black">
                     <h1 className="hidden md:block text-2xl font-semibold">Hi, My name is</h1>
@@ -17,6 +18,10 @@ const Home=()=>{
                     <div className="translate-y-4 md:translate-y-7 md:w-32 w-28 h-10 md:h-12">
                         <a href="https://drive.google.com/file/d/1DsCe3WIEg7MBwY61h8tEpRcbwt6qzCfi/view?usp=share_link" target="_blank" rel="noreferrer" className="flex border-2 w-full justify-center items-center space-x-3 dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white hover:bg-black hover:text-white text-center h-full text-lg sm:text-xl font-medium rounded-md transition-all duration-700 ease-in-out" type="submit"><span >Resume</span> <FiExternalLink size={22}/></a>
                     </div>
+                </div>
+
+                <div className="hidden md:flex w-[500px] h-[500px]">
+                    <img src={devimg} alt="developer png img" />
                 </div>
 
                 <div className="md:hidden h-fit w-full space-y-12 justify-center items-center flex flex-col pt-20">
