@@ -50,7 +50,7 @@ const Navbar=()=>{
 
                 <div className="hidden md:flex w-full h-24 justify-between items-center">
                     <div className="logo flex">
-                        <h1 className="text-2xl font-semibold px-16">Hithaish.</h1>
+                        <h1 className="text-2xl font-semibold px-16">Hithaish's portfolio</h1>
                     </div>
                     <div className="flex font-medium justify-center items-center px-5">
                         <li className="list-none px-5"><Link to="#"   onClick={() => scrollToSection('home')} className="links">HOME</Link></li>
@@ -100,7 +100,7 @@ const Navbar=()=>{
             </ul>
             </div>
 
-            <div className="fixed bottom-5 right-5 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg cursor-pointer" onClick={() => scrollToSection('home')}>
+            <div className="fixed bottom-5 right-5 md:right-6 md:bottom-6 w-10 md:w-12 h-10 md:h-12 z-50  dark:border-white border bg-white border-black justify-center items-center flex  rounded-lg cursor-pointer" onClick={() => scrollToSection('navbar')}>
                 <div className="w-6 h-6 translate-y-1 "><img src={uparrow} alt=""  className="animate-animation1-bounce bottom-0"/></div>
             </div>
 
