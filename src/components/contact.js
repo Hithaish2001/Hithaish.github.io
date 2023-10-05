@@ -5,7 +5,8 @@ import './contact.css'
 const contact=()=> {
   return (
     <div id='contact' className=' w-screen h-fit sm:h-screen flex flex-col justify-center items-center md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray py-14 sm:py-0 select-none'>
-        <div className="w-full text-center"><p className='text-5xl sm:text-6xl font-semibold uppercase font-mono  pb-9 md:text-black  text-black md:dark:text-white dark:text-white'>contact me</p></div>
+        <div className="w-full text-center"><p className='text-5xl sm:text-6xl font-semibold uppercase font-mono  pb-6 md:text-black  text-black md:dark:text-white dark:text-white'>contact me</p></div>
+        <p className='dark:text-white text-black pb-6 md:hidden'>Don't be shy... Hit me up<span className='animate-pulse font-bold'>!</span></p>
          <div className="bg-white md:bg-white  dark:bg-gray-950 md:dark:bg-gray-950  shadow-lg sm:hover:shadow-xl sm:dark:shadow-slate-600 w-[85%] h-[70%] md:w-[80%] md:h-[70%] rounded-[39px] relative justify-around items-center flex  transition-all duration-500 ease-in-out">
             
                 <div className='hidden md:block space-y-3 w-fit h-fit pb-16 p-8'>

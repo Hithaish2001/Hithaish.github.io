@@ -23,27 +23,26 @@ const About = () => {
       id="about"
       className="w-screen h-fit lg:h-screen flex justify-center items-center flex-col md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray font-[470] py-14 xl:py-0 select-none"
     >
-      <div className="w-full">
-        <p className="text-5xl md:text-6xl font-bold text-center md:pb-20 pb-9 font-mono md:text-black md:dark:text-white text-black dark:text-white">
-          About Me
+      <div className="w-full pb-20">
+        <p className="text-5xl md:text-[180px] font-bold text-center md:pb-20 pb-9 font-mono md:text-black md:dark:text-white text-black dark:text-white opacity-[0.05] z-0">
+          <span className="">&lt;</span>About<span className="">/&gt;</span>
         </p>
       </div>
-      <div name="" className="md:flex w-full justify-center items-start ">
+      <div name="" className="md:flex w-full justify-center items-start absolute">
         <div className="hidden md:flex w-72 h-96 flex-none">
-          <div className="absolute w-56 h-96 dark:border-gray-700 border border-stone-200 "></div>
+          <div className="absolute w-56 h-96 dark:border-gray-800 border-4 border-stone-200 "></div>
           <img
             src={pic}
             alt=""
-            className=" z-20 -translate-y-6 -translate-x-7 hover:translate-y-0 hover:translate-x-0 duration-700 ease-in-out"
+            className=" z-50 -translate-y-6 -translate-x-7 hover:translate-y-0 hover:translate-x-0 duration-700 ease-in-out"
           />
         </div>
 
         <div className="max-w-[900px] h-full text-base md:text-xl px-9  md:pl-20">
           <p className="text-justify  md:text-black  text-black dark:text-white md:dark:text-white font-[470]">
-            Hello guys, welcome to my portfolio! I am a frontend Developer
-            engineering student, interested in developing web applications and
-            exploring new technologies. Currently I'm working on reactjs
-            projects for learning
+          As a Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSSI excel in designing and maintaining responsive websites that offer a smooth user experience.
+           My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques.
+            I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
           </p>
           <ul className="text-base md:text-black text-black md:dark:text-gray-400 dark:text-gray-400 md:text-xl pt-5 flex space-x-8 font-medium cursor-pointer uppercase w-full select-none">
             <li
@@ -85,7 +84,7 @@ const About = () => {
                     <img
                       src={html}
                       alt="HTMl"
-                      className="w-24  md:w-44    animate-animation-bounce drop-shadow-xl"
+                      className="w-24  md:w-32 animate-animation-bounce drop-shadow-xl"
                     />
                     <p className="text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans">
                       HTML
@@ -95,7 +94,7 @@ const About = () => {
                     <img
                       src={css}
                       alt="css"
-                      className="w-24  md:w-44   animate-animation-bounce drop-shadow-xl"
+                      className="w-24  md:w-32   animate-animation-bounce drop-shadow-xl"
                     />
                     <p className="text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans">
                       CSS
@@ -105,7 +104,7 @@ const About = () => {
                     <img
                       src={java}
                       alt="java"
-                      className="w-24  md:w-44   animate-animation-bounce drop-shadow-xl"
+                      className="w-24  md:w-32   animate-animation-bounce drop-shadow-xl"
                     />
                     <p className="text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans">
                       JAVA
@@ -115,7 +114,7 @@ const About = () => {
                     <img
                       src={react}
                       alt="react"
-                      className="w-24  md:w-44   animate-animation-bounce drop-shadow-xl"
+                      className="w-24  md:w-32   animate-animation-bounce drop-shadow-xl"
                     />
                     <p className="text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans">
                       REACTJS
@@ -125,7 +124,7 @@ const About = () => {
                     <img
                       src={tailwind}
                       alt="tailwind"
-                      className="w-24  md:w-44   animate-animation-bounce drop-shadow-xl"
+                      className="w-24  md:w-32   animate-animation-bounce drop-shadow-xl"
                     />
                     <p className="text-black dark:text-white md:dark:text-white md:text-black pt-3 text-center font-sans">
                       TAILWIND CSS
