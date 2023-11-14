@@ -23,12 +23,13 @@ const About = () => {
       id="about"
       className="w-screen h-fit lg:h-screen flex justify-center items-center flex-col md:bg-white bg-white dark:bg-black-gray md:dark:bg-black-gray font-[470] py-14 xl:py-0 select-none"
     >
-      <div className="w-full pb-20">
+      <div className="w-full text-center"><p className='md:hidden text-5xl md:text-6xl font-bold font-mono pb-14 md:text-black text-black md:dark:text-white dark:text-white'>ABOUT</p></div>
+      <div className="hidden absolute md:block w-full pb-20">
         <p className="text-5xl md:text-[180px] font-bold text-center md:pb-20 pb-9 font-mono md:text-black md:dark:text-white text-black dark:text-white opacity-[0.05] z-0">
           <span className="">&lt;</span>About<span className="">/&gt;</span>
         </p>
       </div>
-      <div name="" className="md:flex w-full justify-center items-start absolute">
+      <div name="" className="md:flex w-full justify-center items-start">
         <div className="hidden md:flex w-72 h-96 flex-none">
           <div className="absolute w-56 h-96 dark:border-gray-800 border-4 border-stone-200 "></div>
           <img

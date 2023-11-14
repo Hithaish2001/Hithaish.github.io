@@ -72,7 +72,7 @@ const Navbar=()=>{
       })
 
     return(
-       <main className=" w-screen relative text-black dark:text-white z-50 select-none" >
+       <main className=" w-screen text-black dark:text-white z-50 select-none" >
             <div className="navbarClass z-50 flex justify-between items-center  backdrop-blur-lg bg-white/5">
 
 

@@ -11,7 +11,7 @@ const Home=()=>{
     return(
         <div id='home' className="w-screen h-fit md:h-screen bg-white dark:bg-black-gray justify-center items-center flex select-none">
             <div className="home flex md:flex-none flex-col  w-full h-full justify-center items-center py-14 md:py-0">
-                <div className="intro w-full h-full dark:text-white text-black flex justify-center md:justify-end  items-center md:mr-16">
+                <div className="intro w-full h-full dark:text-white text-black flex justify-center md:justify-end  items-center ">
                     <div className="md:absolute md:left-52  md:z-10">
                         <h1 className="hidden md:block text-2xl font-semibold">Hello, I'm</h1>
                         <h1 className="text-5xl md:text-9xl font-bold pt-2 bg-black-top2 bg-clip-text text-transparent dark:bg-black-top dark:bg-clip-text dark:text-transparent font-serif"><span className="md:hidden text-gray-400 font-medium">Hi, I'm</span> Hithaish</h1>
@@ -30,7 +30,7 @@ const Home=()=>{
 
                 
 
-                <div className="md:hidden h-fit w-full space-y-12 justify-center items-center flex flex-col pt-20">
+                <div className="md:hidden  h-fit w-full space-y-12 justify-center items-center flex flex-col pt-20">
                     <div className="flex">
                         <div className="relative rounded-full w-[215px] h-[215px] blur-xl bg-black dark:bg-white animate-pulse"></div>
                         <img src={pic} alt="" className='absolute object-cover rounded-full w-56 h-56 z-20 -translate-y-2' />
